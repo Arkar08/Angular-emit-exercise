@@ -1,0 +1,8 @@
+<form class="search" #productForm = ngForm (ngSubmit)="submit(productForm)">
+    <input type="text" placeholder="Search Product" ngModel name="product">
+    <button>
+        Search
+    </button>
+</form>>
+<app-menu-list (productChange)="handleCategoryChange($event)"></app-menu-list>
+<app-product-list [productName]="productName"></app-product-list>

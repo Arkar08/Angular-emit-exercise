@@ -1,0 +1,13 @@
+
+
+          <div class="main">
+            <mat-card class="example-card" appearance="outlined" *ngFor="let product of filteredProducts" >
+                <img mat-card-image [src]="product.image" alt="Photo">
+                <mat-card-content>
+                    <p>{{product.title}}</p>
+                </mat-card-content>
+              </mat-card>
+          </div>
+          <div *ngIf="noProduct === true">
+            <p>{{text}}</p>
+          </div>

@@ -1,0 +1,7 @@
+<div class="menu">
+        <button mat-stroked-button value="all" (click)="allClick()">All</button>
+        <div *ngFor="let category of categories">
+             <button mat-stroked-button [value]="category" (click)="handleClick($event)">{{category}}</button>
+        </div>
+       
+</div>
