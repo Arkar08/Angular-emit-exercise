@@ -27,3 +27,18 @@
       grid-template-columns: repeat(4,300px);
     }
   }
+  @media (max-width:1250px) {
+    .main{
+      grid-template-columns: repeat(3,300px);
+    }
+  }
+  @media (max-width:940px) {
+    .main{
+      grid-template-columns: repeat(2,300px);
+    }
+  }
+  @media (max-width:600px) {
+    .main{
+      grid-template-columns: repeat(1,300px);
+    }
+  }

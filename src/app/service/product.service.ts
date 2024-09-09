@@ -12,6 +12,7 @@ export class ProductService implements OnInit{
 
   ngOnInit(): void {
     this.getProduct()
+    this.getCategories()
   }
 
   getProduct():Observable<any[]>{
